@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <script src='https://cdn.bootcss.com/echarts/3.2.2/echarts.js'></script>
+    <script src='http://oog4yfyu0.bkt.clouddn.com/liquidfill.js'></script>
+</head>
+
+<body>
+    <div id="main" style="width:800px;height:400px;"></div>
+    <script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('main'));
+        var option = {
+    "backgroundColor": "#fff",
+    "series": [
+        {
+            "animationDurationUpdate": 1000,
+            "data": [
+                0.6,
+                0.5,
+                0.4,
+                0.3
+            ],
+            "animationDuration": 2000,
+            "type": "liquidFill",
+            "color": [
+                "#294D99",
+                "#156ACF",
+                "#1598ED",
+                "#45BDFF"
+            ],
+            "name": "Liquid",
+            "waveAnimation": true,
+            "shape": "circle",
+            "outline": {
+                "show": true
+            }
+        }
+    ],
+    "tooltip": {},
+    "legend": [
+        {
+            "data": []
+        }
+    ],
+    "toolbox": {
+        "top": "center",
+        "orient": "vertical",
+        "show": true,
+        "feature": {
+            "saveAsImage": {
+                "show": true
+            }
+        },
+        "left": "right"
+    },
+    "_index_flag": 1639255,
+    "title": [
+        {
+            "left": "auto",
+            "text": "实例1",
+            "top": "auto",
+            "subtextStyle": {
+                "color": "#aaa",
+                "fontSize": 12
+            },
+            "subtext": "",
+            "textStyle": {
+                "color": "#000",
+                "fontSize": 18
+            }
+        }
+    ]
+};
+        myChart.setOption(option);
+    </script>
+</body>
+
+</html>

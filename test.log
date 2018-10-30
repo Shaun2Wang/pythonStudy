@@ -1,0 +1,5 @@
+2018-10-15 09:59:22,937=====DEBUG+++++this is a debug log.
+2018-10-15 09:59:22,937=====INFO+++++this is a info log.
+2018-10-15 09:59:22,937=====WARNING+++++this is a warning log.
+2018-10-15 09:59:22,937=====ERROR+++++this is a error log.
+2018-10-15 09:59:22,937=====CRITICAL+++++this is a critical log.
